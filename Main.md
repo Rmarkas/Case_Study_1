@@ -3,7 +3,7 @@ Jose Torres, Ruhaab Markas, Megan Hodges
 10/21/2017  
 
 ***
-###Introduction
+### Introduction
 
 ***
 
@@ -51,11 +51,11 @@ source('merge_tidy.R')
 ```
 
 ***
-###Analysis
+### Analysis
 
 ***
 
-####1. How many countries are included in our GDP analysis?
+#### 1. How many countries are included in our GDP analysis?
 
 There are 224 countries that have matching country codes in both the income and GDP data sets.
 
@@ -70,7 +70,7 @@ print(match_count)
 ## [1] 224
 ```
 
-####2. Which country has the 13th lowest GDP?
+#### 2. Which country has the 13th lowest GDP?
 
 Once the data was sorted in ascending order, by GDP, we found the 13th lowest GDP to be St. Kitts and Nevis. One interesting point to note is that there was a tie for the 13th rank in GDP between St. Kitts and Grenada.
 
@@ -84,7 +84,7 @@ print(paste('The 13th is ',inc_gdp_filter[13,'Short Name']))
 ```
 ## [1] "The 13th is  St. Kitts and Nevis"
 ```
-####3. What are the average comparative GDP rankings for the 'High income: OECD' and 'High income: nonOECD' groups?
+#### 3. What are the average comparative GDP rankings for the 'High income: OECD' and 'High income: nonOECD' groups?
 
 Utilizing GDP Rankings and the Income Group we found the average GDP ranks for the following income groups are as follows:
 * High Income: OECD = 32.97
@@ -120,7 +120,7 @@ print(paste('The mean rank for high income:nonoecd is ',mean_rank_nonoecd,'.',se
 ## [1] "The mean rank for high income:nonoecd is 91.39."
 ```
 
-####4. What does a colored scatterplot of GDP vs income group look like?
+#### 4. What does a colored scatterplot of GDP vs income group look like?
 
 Because GDP values are large and have very right-skewed distributions by income group, the chart below presents GDP on a log-base-10 scale, colored by income group.  There is some visual evidence of variability both within each income group and across all income groups.  We did not conduct statistical analyses on the differences of any group means.
 
@@ -135,7 +135,7 @@ print(gdp_scatter)
 
 ![](Main_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
-####5. What does a two-way classification table of GDP quantiles and income look like?
+#### 5. What does a two-way classification table of GDP quantiles and income look like?
 
 We assume that the 5 quantiles desired are for GDP sorted in ascending order. This way, we can assume that the highest quantile is the group of countries with the highest GDP.
 
@@ -166,7 +166,7 @@ quant_inc_table
 ##   GDP Q1                  16                   9
 ```
 
-####6. Which lower-middle income countries have a GDP that ranks among the 38 highest? 
+#### 6. Which lower-middle income countries have a GDP that ranks among the 38 highest? 
 
 Of the 38 countries with the highest GDP, there are 5 countries from the lower middle income category.
 
@@ -192,7 +192,7 @@ top_low_mid_inc[,1:4]
 
 
 ***
-###Conclusion
+### Conclusion
 
 ***
 
