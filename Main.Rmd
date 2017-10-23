@@ -117,7 +117,7 @@ print(gdp_scatter)
 
 #### 5. What does a two-way classification table of GDP quantiles and income look like?
 
-We assume that the 5 quantiles desired are for GDP sorted in ascending order. This way, we can assume that the highest quantile is the group of countries with the highest GDP.
+We assume that the 5 quantiles desired are for GDP sorted in ascending order. This way, we can assume that the highest quantile (quantile 5) is the group of countries with the highest GDP.
 
 ```{r}
 #Cut the GDP ranks by 5 groups with equal number of ranks in each
