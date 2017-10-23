@@ -1,4 +1,4 @@
-# Analysis of GDP Rankings from 2012
+# Summary of GDP Rankings from 2012
 Jose Torres, Ruhaab Markas, Megan Hodges  
 10/21/2017  
 
@@ -7,9 +7,9 @@ Jose Torres, Ruhaab Markas, Megan Hodges
 
 ***
 
-This document describes the data sources, data cleanup process, and data anlaysis for the GDP Ranking study conducted by the authors to answer the following important questions regarding country GDP for various income groups.  The six main questions of interest are:
+This document provides a summary of facts about GDP and income data from The World Bank.  The six main questions of interest are:
 
-1. How many countries are included in our GDP analysis?
+1. How many countries are included in our GDP data?
 2. Which country has the 13th lowest GDP?
 3. What are the average comparative GDP rankings for the 'High income: OECD' and 'High income: nonOECD' groups?
 4. What does a colored scatterplot of GDP vs income group look like?
@@ -17,13 +17,13 @@ This document describes the data sources, data cleanup process, and data anlaysi
 6. Which lower-middle income countries have a GDP that ranks among the 38 highest? 
 
 
-The data used for this analysis comes from [The World Bank](http://www.worldbank.org/) and is staged in two CSV files:
+The data used for this review comes from [The World Bank](http://www.worldbank.org/) and is staged in two CSV files:
 
 
 * Gross Domestic Product data for 190 ranked Countries ([source file](https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FGDP.csv))
 * Income Data by country ([source file](https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv))
 
-The primary variables of interest in this analysis are the following:
+The primary variables of interest in this review are the following:
 
 * Short country code
 * Country name
@@ -51,11 +51,11 @@ source('merge_tidy.R')
 ```
 
 ***
-### Analysis
+### Summary
 
 ***
 
-#### 1. How many countries are included in our GDP analysis?
+#### 1. How many countries are included in our GDP Data?
 
 There are 224 countries that have matching country codes in both the income and GDP data sets.
 
@@ -84,6 +84,7 @@ print(paste('The 13th is ',inc_gdp_filter[13,'Short Name']))
 ```
 ## [1] "The 13th is  St. Kitts and Nevis"
 ```
+
 #### 3. What are the average comparative GDP rankings for the 'High income: OECD' and 'High income: nonOECD' groups?
 
 Utilizing GDP Rankings and the Income Group we found the average GDP ranks for the following income groups are as follows:
